@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Courier New', Courier, monospace;
+}
+/*Nav bar*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #E2E4E6;
+}
+.logo {
+    width: 100px;
+}
+
+li, a {
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px;
+    margin: 15px;
+}
+nav a.active {
+    font-weight: bold;
+    color: rgba(82, 78, 49, 0.797); 
+}
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover {
+    color: rgb(187, 170, 153);
+}
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+/*First section*/
+.intro-info{
+    height: 150px;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    text-align: center; 
+}
+
+.image-intro {
+    
+    height: 800px;
+    padding: 10%;
+    background-image: url("../Images/7.jpeg");
+    background-size: cover;
+    background-position: 100% 40%;
+    background-repeat:no-repeat;
+    text-align: center; 
+}
+.intro h1 {
+    font-size: 50px;
+   margin-top: -100px;
+}
+.intro p {
+   color: black;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 20px; 
+}
+.intro button {
+    border-radius: 25px;
+    background-color:#E2E4E6;
+    color:white;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 30px; 
+}
+.intro button:hover {
+    background-color: rgb(217, 215, 215); 
+}
+button {
+    border-radius: 25px;
+    background-color: transparent;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    border: 1px solid;
+}
+button:hover{
+    background-color:  #E2E4E6;
+}
+.view2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.view2 .product {
+    flex: 0 0 calc(30% - 20px);/* setează flex-grow, flex-shrink și flex-basis pentru elementele flex */
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box; /* Adăugat pentru a include padding-ul în lățimea totală */
+}
+.view2 .product img{
+    width: 100%;
+    height: auto;
+}
+/*second v*/
+.scroll {
+    height: 650px;
+    display: flex;
+    margin-top: 30px;
+    overflow-x: auto;
+    justify-content: space-between;
+}
+.scroll .productsv {
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(205, 202, 202, 0.1);
+    box-sizing: border-box; /* Adăugat pentru a include padding-ul în lățimea totală */
+    padding: 10px;
+    margin: 20px;
+}
+.productsv img{
+    max-height: 100%;
+}
+.sv h2 {
+    font-size: 24px;
+    margin: 20px;
+    padding-right: 0px;
+    text-indent: 5%;
+}
+.sv >div{
+    margin-bottom: 30px;
+}
+
+/*FOOTER*/
+.footer{
+    margin-top: 100px;
+    width: 100%;
+    padding: 50px 15%;
+    background-color: #E2E4E6;
+    display: flex;
+}
+.footer div{
+    text-align: center;
+}
+.col-2{
+    flex-grow:2;
+}
+.footer  h3{
+    font-weight: 300;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+.col-1 a,.col-3 a{
+    display: block;
+    text-decoration: none;
+    color:rgba(82, 78, 49, 0.797);
+    margin-bottom: 10px;
+}
+form input{
+    width:400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top:20px;
+    margin-bottom: 30px;
+    outline: none;
+    border:none;
+    background-color: #ebedef;
+}
+h2{
+    padding-top: 10px;
+}
+.col-2 p{
+    padding-top: 10%;
+    color:rgb(179, 176, 176);
+}
+
+
