@@ -1,65 +1,20 @@
 /*  NAVIGATION  */
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 10%;
-    background-color: #E2E4E6;
-}
 
 .logo{
     width: 5rem;
 }
 
-.logo_toggle{
-    width: 5rem;
-    padding: 1rem 0rem;
+.navbar-nav li, .navbar-nav a {
+    padding: 1rem; 
+    color: rgba(82, 78, 49, 0.797)  ; 
+    text-decoration: none  ; 
 }
 
-li, a{
-    font-weight: 500;
-    font-size: medium;
-    text-decoration: none;
-    padding: 1rem;
-    margin: 1rem;
+.navbar-nav a.active{
+    color: rgba(67, 65, 44, 0.797); 
+    font-weight: bold ;
 }
-
-nav a.active{
-    font-weight: bold;
-    color: rgba(82, 78, 49, 0.797); 
-}
-
-.nav_links li a{
-    transition: all 0.3s ease 0s;
-}
-
-.nav_links li a:hover{
-    color: rgb(187, 170, 153);
-}
-
-.nav_links li{
-    display: inline-block;
-    padding: 0px 20px;
-}
-
-hamburger-menu{
-    display: none; /* Hide by default on larger screens */
-}
-
-.label_toggle{
-    font-size: 25px;
-}
-
-.hamburger-menu input{
-    display: none;
-}
-
-hamburger-menu label{
-    display: block;
-    cursor: pointer;
-    padding: 1rem 2rem;
-    color: #333;
-}
+ 
 
 /*  FOOTER    */
 .footer{
@@ -112,6 +67,7 @@ h2{
 .subscribe button{
     background-color: rgb(217, 215, 215); 
     border: none;
+    border-radius: 25px;
 }
 
 .subscribe button:hover{
@@ -126,28 +82,10 @@ h2{
 }
 
 @media screen and (max-width: 417px){
-    header{
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
-
-    .nav_links {
-        display: none; /* Hide navigation links by default */
-    }
-
     .logo{
         display: none;
     }
 
-    .hamburger-menu {
-        display: block; /* Show hamburger menu on smaller screens */
-        cursor: pointer;
-    }
-
-    .nav_links.responsive {
-        display: flex;
-        flex-direction: column;
-    }
     .footer {
         flex-direction: column;
     }
@@ -182,31 +120,12 @@ h2{
 }
 
 @media screen and (min-width: 417px) and (max-width: 768px){
-    header{
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
-
-    .nav_links {
-        display: none; /* Hide navigation links by default */
+    .footer {
+        flex-direction: column;
     }
 
     .logo{
         display: none;
-    }
-
-    .hamburger-menu {
-        display: block; /* Show hamburger menu on smaller screens */
-        cursor: pointer;
-    }
-
-    .nav_links.responsive {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footer {
-        flex-direction: column;
     }
 
     .footer a{
@@ -246,33 +165,11 @@ h2{
 }
 
 @media screen and (min-width: 769px) and (max-width: 1115px){
-    header{
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
-
-    .logo{
-        display: none;
-    }
-
-    .nav_links {
-        display: none; /* Hide navigation links by default */
-    }
-
-    .hamburger-menu {
-        display: block; /* Show hamburger menu on smaller screens */
-        cursor: pointer;
-    }
-
-    .nav_links.responsive {
-        display: flex;
-        flex-direction: column;
-    }
-
     .subscribe button{
         margin: 2.5rem;
     }
-
+    
+    
     .footer{
         padding: 1rem 10%;
     }
@@ -288,9 +185,6 @@ h2{
 }
 
 @media screen and (min-width:1115px) and (max-width:1141px) {
-    .logo{
-        display: none;
-    }
 
     header{
         padding-top: 1rem;

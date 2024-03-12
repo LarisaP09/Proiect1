@@ -1,43 +1,30 @@
 /*ABOUT US*/
 .aboutus{
     margin: 3rem;
-    display: flex;
-    justify-content: space-around;
-    padding: 0rem;
-   
 }
 
-.aboutus2,.aboutus1{
+.card2,.card1{
     display: flex;
     justify-content: space-around;
-    width:50%;
     padding: 1.5rem;
     box-shadow: 0px 5px 15px #E2E4E6;
     margin: 1rem;
 }
 
-h2 { 
+h5 { 
     padding-bottom: 0.5rem ;
     border-bottom: 1px solid #666 ;
 }
 
-p {
+.card p {
     color: #666;
-    line-height: 1.6;
-    padding-bottom: 1rem;
+    text-align: justify;
 }
-
 
 /*CONTACT US*/
-label{
-    width: 240px;
-    display: inline-block;   
-    margin: 0rem;
-}
-
 .container{
     width: 90%;
-    margin:3rem auto;
+    margin:2rem auto;
 }
 
 .contact-box{
@@ -46,7 +33,7 @@ label{
 }
 
 .contact-left{
-    flex-basis: 70%;
+    flex-basis: 60%;
     padding: 2.5rem 4rem;
     background: #E2E4E6;
 }
@@ -56,7 +43,7 @@ label{
 }
 
 .contact-right{
-    flex-basis: 30%;
+    flex-basis: 40%;
     padding: 3rem;
 }
 
@@ -71,28 +58,30 @@ label{
 .input-row{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1.5rem;
 }
 
-.input-row ,.input-group{
-    flex-basis: 45%;
-}
-
-.insert{
-    width: 100%;
+.form-control{
     outline: none;
-    background-color: #F2F2F2;
+    background-color: #b8b8b8;
+    margin: 0.5rem;
 }
 
-textarea{
+#floatingTextarea2{
     width: 100%;
-    height: 200px;
+    height: 300px;
     border:1px solid;
     outline: none;
     padding: 1rem;
     box-sizing: border-box;
     background-color: transparent;
 }
+.contact-left span{
+    position:relative;
+    font-size: smaller;
+    text-align: right;
+    color: red;
+}
+
 
 label{
     margin-bottom: 6px;
@@ -111,7 +100,7 @@ label{
 }
 
 iframe{
-    width: auto;
+    width: 100%;
     height:300px;
     border: none;
     margin-bottom: 1.5rem;
@@ -245,6 +234,15 @@ tr td{
         margin-bottom: 1.5rem;
     }
     
+    .input-row{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1116px) and (max-width: 1200px){
+    .contact-box {
+        flex-direction: column;
+    }
     .input-row{
         flex-direction: column;
     }

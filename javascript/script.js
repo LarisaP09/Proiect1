@@ -1,8 +1,5 @@
-document.getElementById('toggle').addEventListener('change', function () {
-    const navLinks = document.querySelector('.nav_links');
-    navLinks.classList.toggle('responsive');
-});
-
+document.addEventListener('DOMContentLoaded', function() {
+    // Codul JavaScript care depinde de elementele DOM poat
 const form = document.getElementById('form');
 
 const submitCountElement = document.getElementById('submitCount');
@@ -13,11 +10,11 @@ function handleSubmit(event) {
   submitCount++;
 
   const formData = {
-      name: document.getElementById('name').value,
-      phone: document.getElementById('phone').value,
-      email: document.getElementById('email').value,
-      subject: document.getElementById('subject').value,
-      message: document.getElementById('message').value
+      name: document.getElementById('floatingName').value,
+      phone: document.getElementById('floatingPhone').value,
+      email: document.getElementById('floatingEmail').value,
+      subject: document.getElementById('floatingSubject').value,
+      message: document.getElementById('floatingTextarea2').value
   };
 
   let existingFormData = JSON.parse(localStorage.getItem('formData'));
@@ -37,3 +34,5 @@ function handleSubmit(event) {
   form.reset();
 }
 form.addEventListener('submit', handleSubmit);
+
+});
